@@ -1,0 +1,933 @@
+object==properties and behaviour 
+ex: human 
+properties :name date of birth gender height weight 
+behaviour: work you are doing 
+
+properties:attributes or variables 
+behaviour: methods or procedures 
+
+object@attributes methods 
+
+class :blueprint of object 
+class@properties and behaviour
+
+every thing is object in python
+
+
+
+why we need oops?
+
+oops: object oriented program it is programming paradigm
+real world complex projects 
+oops follows bottom-up approach 
+data security 
+allows parallel programming @modularity 
+
+
+project development cost & time will decrease 
+class with in class we can use for code reusablity 
+software maintaining  easy 
+software quality increase 
+
+frameworks ->classes orm 
+
+oops concepts : 
+1.class 
+2.object 
+3.inheritance 
+4.polymorphism 
+5.encapsulation
+6.abstraction
+
+
+class and object
+
+class-blue print for  creating object 
+class a class is collection of objects 
+
+class>object1 @properties & methods 
+
+class>variables & methods 
+
+bank account program 
+bank account attributes 
+
+
+1.account number 
+2.account holder name 
+3.ifse code 
+4.bank balance 
+bank account methods (or) behaviour 
+1.balance withdraw 
+2.deposit 
+3.check balance 
+
+object is an instance of class 
+
+
+class creation & object creation 
+
+class ---keyword 
+
+class syntax:
+
+class className: 
+ statement 1
+ statement 2 
+ statement 3 
+ --
+ statement n-1 
+ statement n
+
+
+className Give in PascalCase Naming Convention 
+
+PascalCase --ClassName
+
+class ClassName: 
+front indentation four white speces 
+statement1
+statement2
+..
+statementn-1
+statement n
+attributes and methods 
+
+class SampleClass:
+   attribute1=10 
+   attribute2=20 # attributes 
+
+
+ClassName.attributes or 
+ClassName.Methods
+
+print(SampleClass.attribute1)
+print(SampleClass.attribute2)
+
+object creation 
+
+function call:
+functionName()
+
+class Call:
+ClassName()
+
+obj1=SampleClass()
+
+# creating object 
+obj1=SampleClass()
+obj2=SampleClass()
+obj3=SampleClass()
+print(obj1.attribute1)
+print(obj2.attribute1)
+print(obj3.attribute1)
+print(obj1.attribute2)
+print(obj2.attribute2)
+print(obj3.attribute2)
+
+# creating a class method inside class 
+
+class SampleClass1:
+   def samplemethod(self):
+      print("This method is created to demonstarte methos in class")
+
+newObject1=SampleClass1()
+# for accessing method objectname.method()
+newObject1.samplemethod()
+
+
+
+# __init__() method: also called constructor 
+
+Bank account attributes 
+1.bank account number 
+2.bank account name 
+3.bank account ifsc code 
+4.bank account balance 
+
+bank account methods (or) behaviour 
+1.withdraw 
+2.deposit 
+3.check balance 
+
+
+
+
+syntax: def __init__(self,parameter1,parameter2..parameter N):
+            self.parameter1=parameter1
+            self.parameter2=parameter2 
+            ....
+            self.parameterN=parameterN
+
+
+class BankAccount:
+    def __init__(self,accountno,accountName,ifsccode,balance):
+        self.accountno=accountno
+        self.accountName=accountName 
+        self.ifsccode=ifsccode 
+        self.balance=balance 
+    def display(self):
+        print(self.accountno,self.accountName,self.ifsccode,self.balance)
+
+object1=BankAccount(1235654,"jia","BYXPA3569G",10000)
+object1.display()
+
+
+class BankAccount:
+    def __init__(this,accountno,accountName,ifsccode,balance):
+        this.accountno=accountno
+        this.accountName=accountName
+        this.ifsccode=ifsccode 
+        this.balance=balance 
+    def withdraw(this,amount):
+        this.balance-=amount    
+    def deposit(this,amount):
+        this.balance+=amount
+    def checkbalance(this):
+        print(this.balance)
+        
+object1=BankAccount(1235654,"jia","BYXPA3569G",10000)
+object2=BankAccount(1235654,"kia","BYXPA3569G",10000)
+print(object1.accountName)
+print(object2.accountno)
+object1.checkbalance()
+object1.deposit(500)
+object1.withdraw(200)
+object1.checkbalance()
+
+
+we can give any name instead of self ..
+# inheritance : one of the pillar concept in oops 
+
+inheritance : ability to use methods and attributes in newly created class from already 
+created class called inheritance 
+
+or creating a new class from already created class 
+
+inheritance 
+class 
+--> create another class 
+class 
+
+method & attributes @ class 
+method & attributes @ class 
+accessing  attributes and methods @ inherits 
+
+if you already create class we are called super class or base class or parent class 
+
+where we class based on used class we are called methods and attributes @ derived class/child class/sub class 
+
+inheritance parent class -->child class 
+parent class-> human @ male and female 
+animals@parent class # dog child class 
+# lion child class
+# cat child class 
+
+
+type of inheritance 
+
+1.single inheritance 
+2.multiple inheritance 
+3.multilevel inheritance 
+4.hierachical inheritance
+5.hybrid inheritance
+
+# single inheritance
+
+parent(class)--> child(class)
+
+class Parent:
+    def method1(self):
+        print("i am parent")
+# create childClassName(parentclassName):
+class Child(Parent):
+    def method2(self):
+        print("i am a child")
+
+child1=Child()
+child1.method2()
+child1.method1()
+parent1=Parent()
+parent1.method2() # didn't get child symptoms to parent it will give error 
+
+# multiple inheritance 
+father mother parent class 
+childran child class
+
+
+
+class Father:
+    def method1(self):
+        print('i am a father')
+class Mother:
+    def method2(self):
+        print("i am a mother")
+        
+class Child(Father,Mother):
+    def method3(self):
+        print('i am child')
+        
+child1=Child()
+child1.method3()
+child1.method2()
+child1.method1()
+
+
+
+if we have more than one parent inheritance it has same methods 
+mro(methods resolution order)
+print(Child.__mro__) 
+
+multilevel inheritance 
+
+parent-->child class-->child class 
+
+grandparent-->parent-->child 
+
+
+# hierachical inheritance
+ parent class @ child class and child class 
+
+
+class Parent:
+    def ParentMethod(self):
+        print("i am a parent")
+class Child1(Parent):
+    def ChildMethod(self):
+        print("I am a first child")
+        
+class Child2(Parent):
+    def ChildMethod(self):
+        print("i am a second child")
+
+child1=Child1()
+child1.ChildMethod()
+child1.ParentMethod()
+child2=Child2()
+child2.ChildMethod()
+child2.ParentMethod()
+
+
+#Hybrid inheritance 
+
+grandparent -->parent1 -->child 
+<--parent2
+
+
+class GrandParent:
+    def method1(self):
+        print("I am grand parent")
+class Parent1(GrandParent):
+    def method2(self):
+        print("i am a parent")
+
+class Parent2:
+    def method3(self):
+        print("i am a parent2")
+
+class Child(Parent1,Parent2):
+    def method4(self):
+        print("i am child")
+        
+        
+child1=Child()
+child1.method4()
+child1.method3()
+child1.method2()
+child1.method1()
+
+# how to remove duplicate code 
+
+for inheritance to remove code duplication 
+to maintain relationship between objects 
+
+project : university projects to create student and faculty class 
+faculty class attributes 
+1.firstname
+2.lastname
+3.email 
+4.facultyid
+5.address 
+6.mobilenumber 
+7.subjectteaching 
+8.salary 
+9.datejoined 
+
+behaviours:
+getfullName()
+changeAddress()
+changeNumber()
+getSalary()
+
+student class attributes 
+1.firstname 
+2.lastname 
+3.email 
+4.studentid
+5.address 
+6.mobileNumber 
+7.subjectsLearning 
+8.gpa 
+9.datejoined 
+
+methods: 
+getFullName()
+changeAddress()
+changeNumber()
+getGPA()
+
+advantage of inheritance 
+code reusablity
+duplicate code removal 
+easy to add new feature 
+data redudancy 
+need less development 
+easy to maintain 
+
+disadvantas of inheritance 
+
+tightly coupled 
+superclass and subclass are independent to each other ..
+
+
+method overloading : 
+if the class contain more than one method has same name and 
+the method contain different datatypes of parameters(or) different no of parameters 
+(or) both is called method overloading..
+
+
+same method with different types of parameter 
+
+class A:
+    def method(int,int):
+        pass 
+    def method(str,str):
+        pass 
+    def method(float,float):
+        pass 
+
+
+same method with different number of parameter 
+class B:
+    def method(int):
+        pass 
+    def method(int,int):
+        pass 
+    def method(int,int,int):
+        pass 
+
+
+same method has both different number of parameter and different datatypes 
+
+class c:
+    def method(int,int):
+        pass 
+    def method(str,str,str):
+        pass 
+    def method(float,float,float,float):
+        pass 
+
+
+ex: we want to perform addition 
+3 integers 
+4 integers 
+10 float values 
+3 strings 
+
+
+addint2() for two integers addition 
+addint3() for three integers addition
+addfloat2() for two float's addition 
+
+
+features of method overlaoding 
+
+1.flexiblity 
+2.readblity 
+3.program is easy to see complixity will decrease 
+
+python doesn't support method overloading because ,python is dynamically typed language 
+
+class A:
+    def add(self,a,b):
+        return a+b 
+    def add(self,a,b,c):
+        return a+b+c
+obj=A()
+print(obj.add(1,2,3))
+print(obj.add(1,2))
+
+6
+TypeError: A.add() missing 1 required positional argument: 'c'
+
+if don't get error you have install multipledispatch
+
+import multipledispatch
+class A:
+    @multipledispatch.dispatch(int,int)
+    def add(self,a,b):
+        return a+b 
+    @multipledispatch.dispatch(int,int,int)
+    def add(self,a,b,c):
+        return a+b+c
+    @multipledispatch.dispatch(str,str)
+    def add(self,a,b):
+        return a+b
+obj=A()
+print(obj.add(1,2,3))
+print(obj.add(1,2))
+print(obj.add('prashanth','ambala'))
+
+method overriding:
+superclass & superclass has some method. if we access the method in subclass then only subclass method is accessed 
+without accessing superclass method.
+
+Already created a method in superclass then implementing same method in subclass with different  logic and accessing in subclass.
+if it overrides superclass method then it is called method overriding .
+
+super class->sub class 
+rules for method overriding :
+
+1.superclass & subclass must be present(inheritance must be done between two classes)
+2.declare two classes with same method and same parameters 
+3. logic must be different in methods 
+4. method overriding will done when we access the same method in subclass .
+if we access in superclass then method will not override.
+
+
+ex: 
+class GrandParent:
+    def method(self):
+        print("this is grandparent class ")
+class Parent:
+    def method(self):
+        print('this is parent method')
+class Child:
+    def method(self):
+        print("this is child method")
+        
+        
+object1=Child()
+object1.method()
+parent1=Parent()
+parent1.method()
+
+
+polymorphism:
+polymorphism is a greekword 
+polymophism having many forms 
+
+a person has a being a human ,son father husband ...
+
+
+encapsulation -> combining related things in to a single unit 
+
+ex: burger contain different related things (tomato,onion,cheese,bread)
+ex: capsual differnt medicine things 
+
+class>object>data&methods 
+
+-->code will be organized  and clean ex: library 
+-->prevents data from accidental removal and  Ex:we can use can't change
+-->abstraction @ hides implementation logic & allows only to use
+-->datahiding 
+-->modularity
+
+datahiding+abstraction=encapsulation
+
+
+access modifiers:
+3 access specifiers: 
+1.public access specifiers 
+2.protected access specifiers
+3.private access specifiers 
+
+if data is declare in public access specifier we can access data 
+--in same class 
+--by object 
+--we can access from subclass and access by subclass object
+
+if data is declare in protected access specifier it can access only that class and derived class
+if data is declared as private access specifier.it can only access in that class 
+in python private ,protected data is accessed same as public data .
+
+
+1.public access specifier or 
+public access modifier 
+or public member 
+
+any where in the class we can use when we declare in public access specifier 
+
+if data is declare in public class specifier we can access data 
+in same class 
+by object 
+we can access from subclass and access by subclass object 
+
+
+class Parent:
+    publicdata=10 
+    def publicMethod(self):
+        print(self.publicdata)
+        
+class Child(Parent):
+    def method(self):
+        print(self.publicdata)
+        
+obj1=Parent()
+obj1.publicMethod()
+print(obj1.publicdata)
+obj2=Child()
+obj2.method()
+print(obj2.publicdata)
+
+
+
+2.protected access specifiers 
+or 
+protected access modifier 
+or 
+protected member 
+
+if data is declare in protected access specifier it can 
+access only that class and derived class 
+
+put _ [single underscore] before data and method to declare as protected ..
+
+class Parent:
+    _protecteddata=10 
+    def publicmethod(self):
+        print(self._protecteddata)
+class Child(Parent):
+    def method(self):
+        print(self._protecteddata)
+        
+        
+obj1=Parent()
+obj1.publicmethod()
+obj2=Child()
+obj2.method()
+print(obj1._protecteddata)
+
+
+3.private access specifiers 
+ put _ _[double underscore] before data and method to declare as private 
+
+to avoid name collisions we use public,private,protected in python 
+if data is declare in protected access specifier it can access only 
+that class and derived class 
+
+
+class Parent:
+    __privateData=10 
+    def publicmethod(self):
+        print(self.__privateData)
+class Child(Parent):
+    def method(self):
+        print(self._Parent__privateData)
+obj1=Parent()
+obj1.publicmethod()
+obj2=Child()
+obj2.method()
+
+
+Name Mangling: declare data or method with atleast 2 leading underscores and 
+almost 1 trailing underscore. then it will replace to __className Name by the 
+interpreter 
+__data__ 
+double underscore (leading)
+single underscore (trailing)
+
+_className Name 
+name of data or method 
+
+
+Data hiding: is based on encapsulation
+
+data hiding -declare data in one class, doesn't give access to another class & hides the data 
+to give security to sensitive information 
+hides sensitive data for security purpose 
+
+bank application : bank balance 
+
+if we want to give data hiding in python then we declare data as private member 
+in python if we declare data as private member then it is accessible only that class 
+
+ put _ _ [double underscore] before data & method to declare as private member 
+
+ class Bank:
+        __balance=10000
+        def getBalance(self):
+            return self.__balance 
+class API(Bank):
+    def printBalance(self):
+        return self.__balance
+    
+obj=API()
+obj2=Bank()
+print(obj.__balance)
+print(obj2.__balance)
+
+
+if developer wants the data, then give access only to see the data 
+in java,c++ private data accessed only with in the class 
+in python we can use private data any where 
+
+
+Abstraction & abstract classes 
+------------------------------  
+what is abstraction?
+the process of handling complexity by hiding unneccessary information from user 
+is called abstraction.
+ex: atm machine .. enter amount background working nothing important 
+
+hiding internal functionality is also called abstraction.
+
+abstraction vs datahiding vs encapsulation vs message parsing 
+
+abstract classes: we can use  for implementing abstraction 
+
+abstract classes: if a class contain one or more than one abstract method then the 
+class is called abstract class .
+
+abstract method :if the method is declared without implementation it is called abstract method.
+we can not instantiate abstract classes 
+
+concrete method: normal method in abstract class is concrete method 
+
+we cannot directly crete object for abstract class but we can inherit abstract 
+class and we can create object 
+
+from abc import ABC,abstractmethod 
+class A(ABC): 
+    @abstractmethod
+    def method1(self):
+        pass 
+    def method2(self):
+        print("this is a concrete method")
+
+    @abstractmethod 
+    def method3(self):
+        pass 
+    
+class B(A):
+    def method1(self):
+        print("method1 is implement is sub class")
+    def method3(self):
+        print("method3 is implemented3 in sub class")
+
+
+obj1=B()
+obj1.method1()
+obj1.method2()
+obj1.method3()
+
+abstract methods in abstract class must implement in subclass 
+
+rules for inheriting abstract class 
+
+why we need to use abstract method? 
+
+abstract classes used as blueprint for another class/template another class 
+
+if a project has lot of classes & functions then developers create abstract class and use the 
+classes by inheriting
+
+whene we creating classes ,if the class have same methods and implementation is different then we create abstract class 
+
+ex: religion @hindu muslim,christian 
+
+message parsing: the communication chanel between atm and user is message parsing 
+
+encapsulation >data hiding & abstraction 
+
+if we want to hide the data we want access specifiers
+access specifiers provided by encapsulation
+
+
+static variable and instance variable:
+3 types of variable 
+1.static variable or class variables 
+2.instance variable 
+3.local variable
+
+local variable: the variable which is declared inside the method is called local variables 
+same as variable declaration in function 
+
+static variable: the variable which is declared outside the method and inside the class then it is 
+called class variable or static variable 
+
+we can access static variable/class variable in 2 ways 
+className.staticVariableName 
+
+class A:
+    staticVariable1=10 
+    staticVariable2=20 
+    
+    def sampleMethod(self):
+        print('sample method')
+    
+A.staticVariable3=30
+print(A.staticVariable1)
+print(A.staticVariable2)
+print(A.staticVariable3)
+
+objectName.staticVariableName
+obj=A()
+print(obj.staticVariable1)
+print(obj.staticVariable2)
+print(obj.staticVariable3)
+
+if we want to access static/class variable with in class methods using 
+className.variableName 
+self.variableName
+
+
+class A:
+    staticVariable1=10
+    staticVariable2=20 
+def sampleMethod(self):
+    print("sample method")
+def method1(self):
+    print(self.staticVariable1)
+    print(A.staticVariable1)
+
+A.staticVariable3=10
+obj=A()
+A.staticVariable1=100
+print(A.staticVariable1)
+
+we can create ,update ,access ,delete class variable 
+using class name . but we can only access class variable using object 
+
+instance variable: whenever a variable is created for object then it is instance variable 
+we can access instance variable 2 ways
+
+self.variableName=variableName 
+class A:
+    def __init__(self,a,b):
+        self.instanceVariable1=a 
+        self.instanceVariable2=b 
+
+obj=A(10,20)
+obj.instanceVariable3=30 
+obj.instanceVariable4=40
+
+we cannot access one object attributes with another object 
+
+class A:
+    def __init__(self,a,b):
+        self.instanceVariable1=a 
+        self.instanceVariable2=b 
+
+obj=A(10,20)
+obj.instanceVariable3=30 
+obj.instanceVariable4=40
+obj2=A(100,200)
+print(obj2.instanceVariable1,"this is obj2")
+print(obj2.instanceVariable2,"this is obj2")
+print(obj2.instanceVariable3)
+
+
+to update a instance variable 
+obj.variable=value 
+
+class A:
+    def __init__(self,a,b):
+        self.instanceVariable1=a 
+        self.instanceVariable2=b 
+obj=A(10,20)
+obj.instanceVariable3=30 
+obj.instanceVariable4=40 
+obj.instanceVariable1=300  
+print(obj.instanceVariable1)
+
+
+to change instance variable using method :
+self.variableName=value 
+
+
+class A: 
+    def __init__(self,a,b):
+        self.instanceVariable1=a
+        self.instanceVariable2=b 
+        
+    def updateVariable(self,newValue):
+        self.instanceVariable1=newValue 
+        
+obj=A(10,20)
+obj.instanceVariable3=30
+obj.instanceVariable4=40
+obj.instanceVariable1=3000
+obj.updateVariable(4000)
+print(obj.instanceVariable1)
+
+if we create an new variable to an object which is not present , 
+then it will create a new variable for an object 
+class A:    
+    def __init__(self,a,b):
+        self.instanceVariable1=a 
+        self.instanceVariable2=b 
+    def updateVariable(self,newValue):
+        self.instanceVariable1=newValue 
+
+obj=A(10,20)
+obj.r=20
+print(obj.r)
+
+if all objects has same value then we declare it as class variable 
+x-college name,rollno,address,phoneno,college @student class 
+
+when we create instance variable 
+class Student:
+    def __init__(self,name,rollno,address,phoneno):
+        self.name=name 
+        self.rollno=rollno 
+        self.address=address 
+        self.phoneno=phoneno 
+s1=Student("A",1,'a',23565)
+s2=Student("B",2,'b',45786)
+s3=Student("C",3,'c',78786)
+s4=Student("D",4,'d',78567)
+
+for obj in [s1,s2,s3,s4]:
+    print(obj.name)
+    print(obj.rollno)
+    print(obj.address)
+    print(obj.phoneno)
+
+
+attribute of object is instance variable 
+instance variable nothing but attribute of object 
+attribute of class is class variable/staic variable
+
+static variable/class variable nothing but attribute of class 
+
+
+oops contains 3 types of methods 
+
+1.instance method 
+2.class method 
+3.static method 
+
+
+
+instance method: by default the methods we create in class are instance methods 
+
+class@ class methods ,static methods ,instance Methods
+instance method is also called as method of object 
+
+object@ instance methods 
+
+instnace methods create/access/modify /delete the objects attributes 
+
+attributes of object or instance variables both are same 
+
+
+creating instance methods 
+
+syntax:
+
+ def methodname(self,parameter1,parameter2..parametern):
+    body of method 
+
+object referefnce->self 
