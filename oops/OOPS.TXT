@@ -931,3 +931,214 @@ syntax:
     body of method 
 
 object referefnce->self 
+class Employee:
+    def instanceMethod(self):
+        print("instance method created")
+    def instanceMethod2(self,a,b):
+        print(a,b)
+
+How to call an instance method 
+syntax: object.intanceMethod(parameters)
+
+emp1=Employee() 
+emp1-->def instanceMethod1(self):
+emp1.instanceMethod1()
+
+
+creating instnace variables using instance method 
+
+#class method 
+ to perform operations on instance variables we create instance method 
+ object>instance method 
+ for creating class variable to perform operations on class variable 
+ we create class method 
+ classvariable<class 
+ class methods >class 
+ we cannot access instance variables using class methods 
+ we can access class variables using object and access using class 
+ class methods can ba accessesd using object and accessed using class 
+ objects>instance methods 
+ class>class methods 
+
+ using instance methods we can perform opetions class variable 
+
+ class methods not only used for accessing class variables but also used to  deal with 
+ factory methods .
+ why we create class methods?
+ to perform operations on class level variables & to deal with factory methods 
+ creating class method
+ @syntax:
+ @classmethod 
+ def methodName(cls,parameter):
+    body 
+
+class Student:
+    @classmethod 
+    def classMethod(cls):
+        print("class method creaetd succesfull")
+
+
+syntax: 
+object/className.classmethod(arguments)
+
+class Student:
+    @classmethod 
+    def classMethod(cls):
+        print("class method creaetd succesfull")
+
+stud1=Student.classMethod()
+student=stud1 
+student.classMethod()
+student reference> cls 
+generally  the methods we create in class are instance methods 
+
+class Student:
+    college='xyz'
+    
+    @classmethod
+    def classMethod(cls):
+        print(cls.college)
+        del cls.college 
+        print(cls.college)
+        
+Student.classMethod()
+student1=Student()
+student1.classMethod()
+
+import datetime 
+class Student: 
+    def __init__(self,name,id,age):
+    self.name=name
+    self.id=id
+    self.age=age 
+
+   @classmethod 
+   def getAgeDob(cls,name,id,age):
+    return cls(name,id,datetime,now().year-age)
+
+
+student1=Student.getAgeAsDob('rakhi',213215,2000)
+print(student1.name,student1.id,student1.age)
+student2=student('xyz',23,34)
+student3=Student.getAgeAsDob('abc',2636,2001)
+
+
+to perform operations on instnance variables we create instance methods 
+
+objects>instance methods 
+
+to perform operations on class level variables we create class methods and to 
+deal with factory methods 
+
+
+ 
+static methods are general methods 
+to do general task
+why we create normal function?
+to do a task 
+
+static methds are also used to do general task in class 
+
+
+class A: 
+    def i(self):
+    pass
+
+object>object reference >instanc method 
+
+class> class reference > class method
+
+class A:
+    @classmethod 
+    def c(cls):
+        pass 
+
+
+static method : we create instance methods for object 
+we create class methods to deal with class variable to create alternate constructors 
+
+static methdos doesn't perfrom operations on objects and class variables 
+we can only access instance methods using objects 
+we can access class methods using both class and objects 
+
+staic method
+static methods called utility function
+only to related general task for which the class is created 
+
+
+calculator app: 
+4 feateure of calculator app 
+--addition of two numbers 
+--subtraction of two numbers 
+--multiplication of two numebrs 
+-- division of two numbers 
+
+methods :
+ substraction 
+ multiplication 
+ additon 
+ division 
+
+ static method 
+
+
+class A: 
+    @classmethod 
+    def c(cls):
+        pass 
+
+syntax:
+@staticmethod 
+def methodname(parameters):
+    methodbody 
+class A:
+    @staticmethod 
+    def s():
+       pass 
+
+static method is accessd as same as instancemethod and class method 
+
+parameters->className.MethodName()
+class Caluclator:
+    @staticmethod 
+    def add(a,b):
+        retun a+b
+    @staticmethod 
+    def sub(a,b):
+        retun a-b
+    @staticmethod 
+    def mul(a,b):
+        retun a*b
+    @staticmethod 
+    def div(a,b):
+        retun a*b
+
+calculator=Calculator()
+print(calculator.add(10,20))
+print(calculator.sub(10,20))
+print(calculator.div(10,20))
+print(calculator.mul(10,20))
+
+
+dunder method: if a method has double underscores in front and back it is dunder method 
+__init__()
+dunder methods are default methods 
+
+dunder.methods ->class1 
+dunder.methods->class1 
+
+in python every class we created is child class to object class ..
+
+object class>dunder Methods
+if you inherit or don't inherit the object class. 
+the object class is parent class to the class we created 
+
+if parent class have methods then child class also contains that methdos 
+
+ex: class A: 
+     pass 
+dir(A)
+dunder methods are also called as magical methods or special methods 
+__init_ methods calls automatically when a class is called dunder methods ..
+
+class object  __str__() -->class A 
