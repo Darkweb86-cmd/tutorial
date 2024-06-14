@@ -1,0 +1,4 @@
+@geeksforgeeks
+taking screenshots using pyscreenshots in python?
+taking multiple inputs from user in python?
+generate two output strings depending upon occerrence of character?

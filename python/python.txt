@@ -11,6 +11,7 @@ how to execute python in idle?
 how to execute python in command prompt?
 how to execute python in notepad ?
 
+what is indentation why is it important in python?
 what are keywords?
 usage of keywords?
 how to declare keywords?
@@ -21,6 +22,16 @@ what are variables in python
 uses of variables in python?
 how to declare a variable in python?
 rules for creating a variable in python?
+global keyword?
+can we use the same name for different types?
+how does + operator work with variables?
+can we use + for different datatypes also?
+global and local python variables?
+how to define variable in python 
+are there naming conventions for python variables?
+can i change the type of a python variable?
+variables assignment in python?
+declaration and initalization of variables?
 what is snake  case in python?
 what is camel case in python?
 types of variable declaration in python 
@@ -29,13 +40,35 @@ declaring variable type2
 declaring variable type3
 declaring variable type4
 variable datatype conversion?
+string literals in python?
+command line arguments?
+taking input from user in python?
+what is different between input and raw_input?
+taking input from console in python?
+difference between python2.x and python 3.x?
+python program to build flashcard using class in python?
+python merge python key values to list?
+
 
 what are identifiers in python?
 rules to declare identifiers in python ?
 
+what is f-string?
+remove empty strings from lists of string?
+tokenzing strings in lists of strings?
+find all the strings tha tare substrings to the given list of strings?
+convert strings to numbers and numbers to strings in python?
+
 
 what are comments in python?
 how to declare a comment?
+types of comments in python?
+why are comments used in python?
+interesting fact about python multi-line comments?
+how do we create multiline comments in python?
+how to extract youtube comments using youtubeapi-python
+multiline comments in python?
+
 what are docstrings in python?
 how to declare a docstring?
 
@@ -51,8 +84,485 @@ how to store input in python?
 what are datatypes in python ?
 how to use datatypes and when to use datatypes?
 types of datatypes?
+numeric datatypes in python
+sequence datatypes ?
+boolean data types?
+ set data types?
+ dictionary data types?
+ binary data types(memoryview,bytearray,bytes)
 what is simple datatype?
 what is number datatype?
 what is string datatype?
 what is boolean datatype?
 
+what is number datatype?
+types of number data types?
+what is integer data type?
+what is floating point number data type?
+what is complex number data type?
+
+
+what is number methods?
+abs() number method in python?
+ceil() number method in python?
+floor() number method in python?
+round() method in python?
+exp() number method in python?
+log() number method in python?
+log10() number method?
+max() method function?
+min() method function?
+pow() function ?
+sqrt() number in method?
+
+what string datatype in python?
+why strings are simple datatype?
+how to declare string datatype in python?
+how to take string as input?
+why strings are compound datatypes?
+why strings are sequence datatypes?
+
+what is string indexing in python?
+string index or string accessing?
+indexing of a string using positive index?
+indexing of  a string using negative index? 
+slicing of a string using positive index?
+logic behind index?
+slicing using negative index?
+basic and intermediate rules for slicing?
+what are the string methods?
+string capitalize() method?
+string title() method?
+string istitle() method?
+string upper() method ?
+string isupper() method?
+string lower() method?
+string islower() method?
+string swapcase() method?
+string index() method?
+string find() method?
+string split() method?
+string join() method?
+string replace() nethod?
+string count() method?
+string isspace() method?
+string startswith() method?
+string endswith() method?
+string isidentifier() method?
+string isalpha() method?
+string isdecimal() method?
+string isnumeric() method?
+string isalnum() method?
+
+what ascii?
+what is builtin functions?
+chr() string method?
+ord() string method?
+max() function?
+min() function?
+len() function?
+sorted() function?
+
+what is boolean datatype?
+reallife example for boolean datatype?
+how to take boolean input from user?
+
+what is list?
+list uses in real life?
+how to declare a list?
+is list compound data type  and why?
+why list are heterogenous data type?
+is list sequence data type and why?
+how to access elements from a list?
+how to access list using negative index?
+
+how to slice a list using positive index?
+what is slicing?
+syntax for slicing?
+example for list slicing?
+slicing using negative index?
+rules for slicing?
+
+
+why list are mutable?
+how to perform operations on lists?
+insertion methods in list?
+append method in list?
+insert method in list?
+extend method in list?
+
+list deletion method?
+list pop method?
+list remove method?
+list clear method?
+list updation methods?
+list update slice method?
+
+
+list other methods introduction?
+list sort method?
+list reverse method?
+list index method?
+list copy method?
+list count method?
+
+bulit-in functions introduction
+max() function?
+min() function?
+len() function ?
+sorted() function?
+sum() function?
+
+how to take input for integer,string,floats,
+strings in a list?
+syntax:input().split()
+list advantages in python?
+list disadvantages in python?
+
+what is tuple?
+why tuples are compound data types?
+why tuples are heterogenous data type?
+why tuples are immutable data type?
+why tuples are sequence data type?
+how to declare a tuple in python?
+
+positive indexing in tuples?
+reverse or negative indexing in tuples?
+
+count() method?
+index() method?
+
+slicing in tuples?
+tuple slicing using positive index?
+tuple slicing using negative index?
+rules for slicing?
+
+
+how to take input for integers ,floats,strings in a tuple?
+syntax: tuple(input().split())
+
+why tuples are faster than lists ?
+
+python set data type in telugu?
+
+set methods introduction?
+set add method?
+set pop method?
+set remove method?
+set discard method?
+set clear method?
+set copy method?
+set union method?
+set update method?
+set difference method?
+set difference_update method?
+set intersection method?
+set intersection_update method?
+set isdisjoint method?
+set symmetric_difference method?
+set symmeteric_difference_update method?
+set issubset method?
+set issuperset method?
+
+set advantages in python?
+set disadvantages in python?
+
+what is dictionary?
+how to declare dictionary?
+keys() method?
+values() method?
+items() method?
+get() method?
+setdefault() method?
+update() method?
+fromkeys() method?
+popitem() method?
+pop() method?
+clear() method?
+
+python range() functions?
+
+python airthmetic oprators?
+subtraction operator?
+modulus operators?
+exponentiation operator?
+division operator?
+floor division operator?
+multiplication operator?
+
+assignment oeprators?
+equal assignment operator(=)
+addition assignment operator(+)
+subtraction assignment operator(-=)
+
+multiplication assignment operator
+division assignment operator
+floor division assignment operator
+modulus  division assignment operator 
+exponentiation assignment operator 
+
+
+python comparision operators 
+introduction?
+is equal to operator?
+is not equal to operator?
+greater than operator?
+is greater than or equal to operator?
+less than operator?
+is greater than or equal to operator?
+comparision operators on literable?>
+is greater than operator on lists?
+is greater than or equal to oeprators on tuple?
+is less than operator on strings?
+is less than operator on lists?
+
+
+
+
+logical operators introduction?
+and logical operator ?
+or logical operator?
+not logical operator?
+
+
+bitwise operators?
+ 
+bitwise operators introduction?
+bitwise and operator(&)
+bitwise or operator(|)
+bitwise not oeprator(~)
+bitwise exclusive or operator(^)
+
+bitwise shift operators?
+bitwise left shift opertor?
+bitwise right shift operator?
+
+membership oeprators?
+mebership operators in introduction?
+in membership operators?
+notin membership operators?
+
+
+identity operator in introduction?
+is identity operator?
+is not identity operator?
+
+what is precedence operators?
+
+python operators on strings?
+python operators on lists?
+operators on tuples in python?
+operators on sets in python?
+operators on dictionary in python?
+
+
+type casting introduction 
+what is typecasting in python?
+implicit type casting or type conversion 
+explicit type casting ?
+type casting vs type conversion ?
+
+
+python flow control statement introduction?
+python sequence control statements?
+python condition control statements or decision making statements?
+python loop control statements or iterative control statements or repetitive 
+control statements?
+
+python conditional statements or decision making statement introduction
+python type of conditional statements or decision making statements 
+python simple if conditional statement?
+
+python if else conditional statement?
+python if elif else in python?
+python nested if conditional statement?
+
+python for loop?
+python while loop?
+python nested for loop?
+
+what is break statement?
+what is continue statement?
+what is pass statement?
+
+for else in while else in python?
+
+
+what is function?
+how is function?
+when we use function?
+why  we need functions?
+how to declare a functions?
+how to call a function?
+what is dynamic functioning?
+parameters and arguments in functions?
+advantages of functions?
+
+what is arguments?
+what is parameters?
+type of arguments in function?
+positional arguments in functions?
+python keywords and identifiers?
+keyword arguments in functions?
+default arguments in functions?
+variable length arguments or arbitary arguments in functions?
+
+what is scope of variable in python?
+what is global scope or global variable?
+what is enclosed scope or enclosed variable?
+what is local scope or local variable?
+what is built-in scope?
+why we need scope of variable?
+
+when we use global keyword?
+why we use global keyword?
+what is global keyword?
+when we use nonlocal keyword?
+why we use nonlocal keyword?
+what is nonlocal keyword?
+difference between global and nonlocal keyword in python?
+
+what is bulit-in function?
+why we need built-in functions?
+most important built-in functions and what are they?
+what is global variable and local variable 
+difference b/w both of them?
+
+what is lambda function?
+why we need lambda function?
+when we use lambda function?
+difference between lambda function and normal function?
+
+
+what is print function?
+what is sep parameter in print function?
+what is end parameter in print function?
+difference between end and sep in python?
+python end parameter in print()?
+formatting output using the string method?
+json formatting in python 
+python code formatting using black?
+formatting axes in python-matplotlib 
+formatiing containers using format() in python?
+python-split strings ignoring the space formating characters?
+file parameter of python's print() function?
+key-value to url parameter conversion?
+split and pass list as separate parameter?
+what is file parameter in print function?
+how to use different ways of print function?
+print output from os.system in python?
+program to print its own name as output?
+click resposnse on video output using events in opencv?
+write os.system output in file using python?
+print powers using anonymous function in python?
+how to print without newline in python?
+print without newline in python 3.x?
+print without newline in python 3.x without using for loop?
+print without newline using python sys module?
+ways to split strings using newlien delimeter?
+escape from \n new line character in python?
+difference between newline and carriage return in python?
+print first m multiples of n without using any loop in python?
+file parameter of python's print() function?
+python |sep parameter in print?
+key-value to url parameter conversion?
+split and pass list as separate parameter?
+transfer kwargs parameter to a different function in python?
+
+
+what is map function?
+why we need map function even there is for loop and list comprehension?
+in which situation is better?
+advantages of map?
+taking different data types input for different types using map functions?
+squaring of element in lists program using map function?
+squaring of elements if elements is even and cubing the elements if elements 
+is odd program using map function?
+
+
+what is filter function?
+why we need filter function even there is for loop and list comparision?
+in which situation is better?
+advantages of filter?
+finding even elements in lists program using filter function?
+finding consonants in given string and print as a list program using map function?
+
+what is module?
+why we need modules?
+advantages of modules?
+when to use modules?
+
+what are modules?
+why we need modules?
+how to create modules?
+how to import modules using from and import keyword with best exampleS?
+
+
+what are built-in modules?
+why we need this built in modules?
+what are the most important built-in modules in python and what are they?
+what are the useful modules for strings?
+what are the useful modules for numbers?
+what are the useful modules for functional programming?
+what are the useful modules  for data types ?
+
+what are the math module?
+python trigonametric functions?
+
+what are string module?
+string module constants:
+ascii_lower,
+ascii_upper,
+ascii_letter..
+ways to split strings using newline delimeter?
+removing newline character from string in python?
+escape from \n newline character in python?
+
+
+what is random method?
+random module methods?
+
+flattring data structures using sum method?
+flattring data strucutes using eval method?
+if-else and if-elif-else using tuple  in single line?
+getting decimals between range?
+removing null values using filter method?
+
+
+what is an array?
+why we need array data structure in python?
+why an array is a homogenous data structure?
+why an array is a compound data structure?
+why an array is a mutable data structure?
+why an array is mutable data structure?
+why an array is a sequence data structure?
+why an array is a numeric data structure?
+advantages of an array data structure?
+declaration of array in python?
+how to do indexing in arrays in python?
+we can do positive indexing and negative or reverse indexing in array?
+array slicing positive and negative slicing?
+
+python array methods?
+a> insertion methods?
+append methods
+insert method 
+extend method
+formlist method
+b> deletion methods?
+1.pop method
+2.remove method
+c> updation method using index 
+d> other methods
+1. index methods 
+2. find method
+3.count method 
+4. reverse method 
+
+
+python tricks
+how to copy one file into another file in python?
+how to count number of lines in a file in python?
+how to get n largest numbers and n smallest numbers from an iterable(list,set,tuple) in python?
+how to perform cumulative operations[sum,product,subtraction,division]on iterables[list,set,tuple] in python?
+how to get null values [{},[],(),0,false,None,","] from iterable [list ,set,tuple]
