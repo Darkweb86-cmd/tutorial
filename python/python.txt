@@ -1,0 +1,58 @@
+what is python?
+history of python?
+why python famous?
+features of python?
+advantages disadvantages?
+
+how to install python?
+
+how to execute python?
+how to execute python in idle?
+how to execute python in command prompt?
+how to execute python in notepad ?
+
+what are keywords?
+usage of keywords?
+how to declare keywords?
+rules to use keywords?
+usage of keywords?
+
+what are variables in python 
+uses of variables in python?
+how to declare a variable in python?
+rules for creating a variable in python?
+what is snake  case in python?
+what is camel case in python?
+types of variable declaration in python 
+declaring variable type1
+declaring variable type2
+declaring variable type3
+declaring variable type4
+variable datatype conversion?
+
+what are identifiers in python?
+rules to declare identifiers in python ?
+
+
+what are comments in python?
+how to declare a comment?
+what are docstrings in python?
+how to declare a docstring?
+
+what are inputs in python?
+types of inputs in python?
+what is core?
+process of input in python
+how to take input in python 
+how to see datatype of input in python?
+how to store input in python?
+
+
+what are datatypes in python ?
+how to use datatypes and when to use datatypes?
+types of datatypes?
+what is simple datatype?
+what is number datatype?
+what is string datatype?
+what is boolean datatype?
+
