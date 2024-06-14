@@ -1,3 +1,106 @@
+what is oops?
+what is programming paradigm?
+oops introducution ?
+
+why we need oops?
+what are the features of oops?
+what are the advantages of oops?
+
+what is class?
+why we need class?
+advantages of class?
+what is an object?
+why we need object?
+how to declare class and object?
+
+what is  inheritance?
+type of inheritance?
+single inheritance
+multiple inheritance 
+multilevel inheritance 
+hierachical inheritance 
+hybrid inheritance 
+how to remove duplicate code in inheritance
+
+what is method overloading?
+does python supports method overloading?
+how can we implement method overloading in python?
+
+what is method overriding?
+how can we implement method overriding in python?
+when we use method overriding?
+what is polymophism?
+how can we implement polymophism?
+polymophism using method overloading?
+polymorphism using method overriding?
+polymorphism using operator overlaoding?
+polymorphism using functions?
+polymorphism using built in functions?
+
+what is encapsulation?
+uses of encapsulation?
+access specifiers or modifiers in python?
+
+what is name Mangling?
+uses of name mangling?
+why we need name mangling?
+
+
+what is data hiding?
+uses of data hiding?
+access specifiers or modifiers used for data hiding in python?
+
+what is abstraction?
+uses of abstraction?
+abstact class in python?
+abstract method in python?
+
+what is instance variable?
+how to create instance variable?
+how to access instance  varaible?
+how to update instance variable?
+why we need instance variable?
+what is class variable?
+how to create class variable or static variable?
+how to access class variable or static variable?
+how to update class variable or static variable?
+why we need class variable or static variable?
+advantages of instance variable?
+advantages of class or static variable?
+difference between  instance variable and class variable?
+
+
+what is instance method?
+how to create instance method?
+how to access instance variable using instance method?
+how to update instance variable using instance method ?
+why we need instance method?
+how to access class variable or static variable using instance method?
+how to update class variable or static variable using instance method?
+why we need class variable or static variable using instance method?
+advantages of instance methods?
+
+what is class method?
+how to create class method?
+how to access class variable or static variable using class method?
+how to access class variable or static variable using class method?
+why we need class variable or static variable using class method?
+when we need class methods?
+advantages of class methods?
+
+what is static method?
+how to access static method using class ?
+how to access static method using object?
+why we need static method?
+advantages of static method?
+
+what is dunder method?
+how to use dunder method?
+how to access dunder method?
+why we need dunder method
+advantages of dunder methods ?
+different types of dunder methods?
+
 object==properties and behaviour 
 ex: human 
 properties :name date of birth gender height weight 
