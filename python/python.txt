@@ -48,7 +48,7 @@ taking input from console in python?
 difference between python2.x and python 3.x?
 python program to build flashcard using class in python?
 python merge python key values to list?
-
+python if __name__=="__main__"?
 
 what are identifiers in python?
 rules to declare identifiers in python ?

@@ -1,0 +1,112 @@
+what is framework?
+what is web framework?\
+what is mvt?
+what is django?
+introduction django?
+requirements for learning django?
+How to Check Django is Installed 
+How to Check Django is Installed 
+How to Install Django
+How to Install Django in Separate Environment
+Step1: How to Install Virtual Environment Wrapper 
+Step2: How to Create Virtual Environment 
+Step3: How to Activate Virtual Environment
+Step4: How to Install Django in Separate Environment 
+How to Install Virtual Environment Wrapper 
+How to Create Virtual Environment 
+How to Check Virtual Environment is Active
+How to Activate Virtual Environment 
+How to Install Django in Separate Environment
+What is Django Project
+How to Create Django Project 
+How to Run Django Project
+How to Run Server
+How to Stop Server 
+how to uninstall django from separate environment?
+django project directory structure?
+__init__,wsgi,and asgi files in django?
+settings files in django?
+urls and manage files in django?
+how to run server?
+how to change port?
+how to stop server?
+how to create/start django application?
+how to install/add django application?
+application directory structure in django?
+setup visual studio coed for django?
+install python extension?
+install pyint?
+install autopep8?
+
+
+create function based view in django?
+type of view?
+function based view?
+single application with single view function?
+single application with multiple view function?
+
+url dispatcher or url pattern inside project in django?
+url dispatcher/url pattern?
+path() function?
+url pattern inside project?
+single application with single function?
+multiple url pattern for one view function?
+single application with multiple function?
+
+multiple application inside project and their function based views in django?
+multiple application inside project 
+install/add multiple application in project 
+function based view with multiple application 
+url pattern inside inner project folder for multiple application
+why defining url pattern inside inner project folder is not a good approach
+
+
+url dispatcher or url pattern inside applciation in django?
+url pattern inside project?
+why url pattern inside application?
+benefits of url pattern inside application
+include() function?
+url pattern inside application?
+
+
+template and how to render template file in django?
+why should we use template?
+template?
+what is template?
+create template and folder and files?
+add templates in settings?
+rendering template files 
+render() function 
+
+creating and rendering templates file for each application Separately in django?
+how to create template folder and files for each application?
+write template files ?
+rendering template files?
+
+django template files using dtl in django?
+what is DTL?
+What is Django Template Language?
+What is Jinja2
+DTL Variables?
+Dynamic Template Files with Variables?
+Setting up Project Coding?
+Jinja2 Setting Coding?
+DTL Variable Coding?
+Filters?
+Filters Coding?
+Date Time Filters?
+Date Time Filters Coding?
+Float Format Filter?
+Float Format Filter Coding?
+if Tag?
+if Tag Coding?
+if else Tag Coding?
+if elif Tag Coding?
+Dot Lookup in DTL?
+for loop Tag?
+for loop Tag Coding?
+Predefined forloop Variable?
+Predefined forloop Variable Coding?
+Complicated Data Example Coding?
+Nested for loop Tag Coding?
+
