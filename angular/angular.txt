@@ -1,0 +1,67 @@
+Introduction to anuglar 
+
+it is a javascript framework 
+developed by google 
+it is written typescript 
+we can create single page application
+angularjs vs angular
+
+angular requirements 
+nodejs 
+angular cli 
+editor vs code 
+
+
+road map 
+
+project structure 
+components 
+data binding 
+component communication 
+directives 
+routing 
+forms 
+pipes 
+services 
+http 
+
+
+how to installation angualrjs 
+
+angular cli 
+create application 
+
+angular cli 
+node --v
+npm install -g @angular/cli 
+
+Angular cli create application
+1:26 angular cli
+Before we install angular we need to Check Nodejs that is command is node - -v
+Angular cli install command
+npm install -g @angular/cli
+npm (Node Package Manager) to globally install the Angular CLI (Command Line Interface) package. This package is super handy for creating, building, and managing Angular projects. It helps you set up the structure of your Angular apps and perform various tasks efficiently.
+5:43 check install angular cli
+ng --version
+This command will display the version of the Angular CLI that is installed on your system.
+7:05 create new application angular application
+7:08 ng new project name
+9:57 ng new Demoapp in vs code terminal
+10:37 while installing asking angular routing using or not yes
+10:56 Css language
+13:27 success installed application
+14:53 app.component.html
+15:10 run angular application cli
+ng serve /ng start
+15:38 cd demo
+15:50 run application ng serve/ng start
+18:00 https://localhost/4200 app.component.html content will display
+20:00 port no change 
+ng serve -p 5000
+ compile and open 
+Ng serve -o @flags 
+
+
+
+
+
