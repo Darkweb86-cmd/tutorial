@@ -618,3 +618,32 @@ select statement:
  --calculate aggregation and summers 
  --order data in ascending or descending order 
 
+
+
+----select---
+
+---display all columns and all records from table--
+select * from public.employee;
+
+--display all columns and all records from table--
+select first_name,last_name from public.employee;
+
+--calcualte yearly salary for all employees--
+select employee_id,first_name,salary as year_salary ,salary*12 from employee;
+
+
+---derive full name-- 
+select first_name ,last_name ,first_name||last_name as full_name from public.employee;
+
+select first_name,last_name,first_name||' '||last_name as full_name from public.employee;
+
+--perform airthemetic operations--
+select 20+47,277+48,-146+26;
+
+--call predefined functions--
+select sqrt(625),power(4,3),mod(92,10);
+
+--other database try with dual dummay --
+select 20+45,278+149,sqrt(625),power(4,3),mod(92,10) from dual;
+
+select 20+48,278+45,-146-24,power(4,5),mod(92,10) from dummy;
