@@ -1,0 +1,56 @@
+meaning of git ?
+unpleaant person in british english 
+histoty: linus torvalds
+linux kernal
+bitkeeper 
+anonunced project(git) on 6th april, 205 
+16th june 2005 git managed kernel 2.6.12 release 
+
+features:
+ distributed source control system 
+ open source 
+ large and active community 
+ fast 
+
+git for windows 
+handling project code 
+https://gitforwindows.org/ -->download->installation 
+
+after installation
+git version 
+git --version
+
+what is repository?
+handling projects through repository..
+ 
+where does repository live in?
+folder/github/onlinehost
+
+
+github accounts:
+
+ project-->repository->dev1/dev2/dev3/dev4
+
+difference  github and gitlab
+
+github
+
+free
+pro 
+team and entrepreneur 
+
+gitlab:
+
+free 
+bronze 
+silver 
+gold 
+
+Creating github account 
+google->github.com->signup->username email address password confirm email 
+->verify email->github profile->username->profile picture->bio->public repositories->
+->new repository->repository name->description->public->create repository
+->repository->code->readme->
+->clone->download zip->open in desktop->open in github desktop->
+->open with github desktop->
+->github desktop->clone->open in explorer->

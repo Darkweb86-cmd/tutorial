@@ -1,0 +1,620 @@
+
+
+what is data,database?
+data is anything that can be represented as text,numbers,or multimedia (like image,sound,video,etc)
+ex: 'technology',243569,,'2022-06-04'
+
+dataset:is a structured collection of data that contains information of an entity  
+ex: student dataset: id,name,age,grade
+database:is a collection of datasets that are organized in a way that allows for efficient retrieval and manipulation
+ex: student database: student dataset,teacher dataset,course dataset
+
+what sql can do? 
+sql can create new databases 
+sql can create new tables in a database
+sql can insert records in a database 
+sql can update records in a database
+sql can delete records in a database
+sql can query data in a database
+sql can create views in a database
+sql can create stored procedures in a database
+sql can create indexes in a database
+sql can create triggers in a database
+sql can manage database security
+sql can optimize database performance
+sql can backup and restore databases
+sql can import and export data between different databases
+sql can perform data analysis and data visualization
+
+how download and install sql server?
+1. go to the official Microsoft website and download the SQL Server Express edition
+2. choose the desired language and click on the download button
+3. run the downloaded file and follow the installation wizard
+4. accept the terms and conditions and choose the installation location
+5. choose the features you want to install (e.g. database engine, management tools, etc)
+6. specify the instance name and the server configuration
+7. specify the authentication mode (e.g. Windows authentication, mixed mode, etc)
+8. specify the database administrator account and password
+9. click on the install button to start the installation process
+10. wait for the installation to complete
+
+check version:
+
+
+sql> select @@version;
+
+database: is a system that allow users to store,organize and analyze data.
+it is an organized collection  of data stored  in multiple related datasets 
+example: employee database contains below datasets 
+- employee dataset: id,name,age,department
+department dept_id,dept_name,desc 
+emmployee emp_id,emp_name,dob,salary,dept_id,loc_id 
+location: loc_id,loc_name,desc 
+sal_grade: grade,min_Sal,max_sal 
+heierachy : emp_id,mngr_id 
+
+
+uses of database:
+1. data sharing: multiple users can access and share data
+2. data persistence: data is stored permanently even if the system crashes
+3. data security: access control and encryption ensure data is protected
+4. data integrity: data is consistent and accurate
+5. data scalability: databases can handle large amounts of data
+6. data querying: databases provide a way to query and retrieve specific data
+7. data analysis: databases provide a way to analyze and visualize data
+8. data backup and recovery: databases provide a way to backup and recover data
+
+advantages of sql
+1. standardization: sql is a standard language for accessing and managing relational databases
+2. portability: sql can be used on multiple platforms and databases
+3. simplicity: sql is a simple language to learn and use
+4. flexibility: sql can be used for a wide range of applications
+5. scalability: sql can handle large amounts of data and scale to meet the needs of growing applications
+6. security: sql provides a way to secure data with access control and encryption
+7. data integrity: sql provides a way to ensure data consistency and accuracy
+8. data analysis: sql provides a way to analyze and visualize data
+
+
+what is RDBMS?
+rdbms: relational data base management systems 
+a relational database is database that stores data in a table form,containing columns and rows 
+rdbms is a system used to store,manage,query and retrieve data stored in a relational databases 
+the rdbms providers an interface between users and applications and the database
+
+List of rdbms systems?
+oracle,mysql,teradata,sql server,postegresql,vertica,
+ibm db2,snowflake(cloud database)
+
+what is table?
+
+table is a database object that is a collection of related data entires,where data is organized in rows and columns 
+rows are also knows as records 
+columns are also knows as fields or attributes
+
+example: customer table 
+customer_id,customer_name,customer_age,customer_address,customer_phone
+meta data: data about data,it gives the info that what data is stored in a table .
+
+how to load data into database in tables?
+using manual insert statements 
+importing  data from files using sql clients(dbeaver,squirel,oracle sql dev,teradata sql assistant,toad)
+load using etl tools or scripts 
+
+how to access the data from database?
+sql 
+we can access and manipulate the data from relational databases by using sql 
+sql is a programming language used to communicate with these rdbms systems like oracle,teradata,mysql,sql server etc ..
+sql is an ansi/iso standard,all databases support ansi sql so the syntazes keywords and functions or almost similar in all databases 
+we can build sql queries and procedures to opreate with the data present in database 
+queries can be written by using oeprators,keywords ,expression functions..
+sql is used for creating,modifying,querying,manipulating data in relational databases
+queries can be written by using operators ,keywords expression functions 
+
+datatypes 
+datatypes are used to define the type of data that can be stored in a column of a table
+data types specify the type of data we storing or querying 
+there are many data types to store 
+-- text (characters,strings)
+--numeric values 
+-- date and time values 
+--boolean (true or false)
+--images,audio,video data 
+
+data types
+1. numeric data types
+--integer
+--float
+--decimal
+--double precision
+2. character data types
+--character
+--varchar
+--char varying
+--text
+--clob
+3. date and time data types
+--date
+--time
+--timestamp
+--datetime
+4. boolean data types
+--boolean
+5. binary data types
+--binary
+--varbinary
+--blob
+--bytea
+6. other data types
+--array
+--json
+--xml
+--uuid
+--geometry
+
+what is difference char and varchar?
+char is fixed length character data type
+varchar is variable length character data type
+char(5) means it will always occupy 5 bytes of space even if we store less than
+varchar(5) means it will occupy only the space required to store the data
+
+what is difference between int,integer,bigint?
+int and integer are same
+int is used in sql server
+integer is used in oracle,mysql,postgresql
+bigint is used to store larger integer values
+what are the data types? 
+date it is used to specify date format yyy-mm-dd 
+time: it is used to specify the format. its format is hh:mm:ss or hh24:ml:ss 
+datatime: it is used to specify date and time combination .
+it is format is yyyy-mm-dd hh:mm:ss 
+timestamp: it is used to specify the timestamp 
+boolean : just to indicate true or false,0 is false any non-zero is true 
+
+operators in sql 
+1. arithmetic operators
+2. comparison operators
+3. logical operators
+4. string operators
+5. bitwise operators
+6. assignment operators
+7. special operators
+--arithmetic operators
++, -, *, /, %   
+--comparison operators
+=, <>, !=, >, <, >=, <=
+--logical operators
+and, or, not
+--string operators
++, ||
+--bitwise operators
+&,&,&,^,~
+--assignment operators
+=, +=, -=, *=, /=, %=, ^=, &=, |=, <<=,
+--special operators
+like, ilike, in, not in, exists, not exists, is null, is not
+is distinct from, is not distinct from
+
+sql set operators with examples 
+1. union: it is used to combine the result of two or more select statements
+each select statement within union must have the same number of columns
+the columns must have similar data types
+also, the columns in each select statement must be in the same order
+example: select * from table1 union select * from table2
+2. union all: it is used to combine the result of two or more select statements
+it returns all rows including duplicates
+example: select * from table1 union all select * from table2
+3. intersect: it is used to return only the rows that are common to the result of two
+or more select statements
+example: select * from table1 intersect select * from table2
+4. except: it is used to return only the rows that are present in the first select
+statement but not in the second select statement
+example: select * from table1 except select * from table2
+
+sql practice three ways 
+using online sql editors (for temporary purpose)
+by installing postgresql 
+how to install postgresql?
+postgresql > download > choose version os>
+install 
+
+from snowflake easiest and advanced cloud database 
+
+snowflake > sign up > create account > create trial account
+create a new role > create a new warehouse > create a new database > create a new schema >
+create a new table > insert data > practice sql
+
+types of sql statements ?
+
+there are 5 types of sql statements 
+ddl: data definition language 
+dml: data manipulation language 
+dcl: data control language 
+tcl: transaction control language 
+dql: data query language 
+
+types of sql statements 
+sql commands 
+ddl :create alter drop truncate 
+dml: insert update delete 
+dcl: grant revoke 
+tcl: commit rollback revoke 
+dql: select 
+
+ddl definition?
+ddl stands for data definition language
+deals with the definition of database objects,used to create ,modify 
+and remove the structure of the database objects like tables, views,functions etc. 
+below are the ddl commands 
+create,alter,drop,truncate...
+
+
+ddl is used to define the structure of a database
+ddl commands are used to create modify and delete database objects such as tables indexes views and relationships
+ddl commands are used to define the structure of a database
+
+create command?
+create command is used to create a new database object such as table,view,index,stored procedure etc
+syntax:
+create TABLE TAB_NAME
+{
+    column1 datatype,
+    column2 datatype,
+    ...
+};
+crete view view_name as select _ from tab_name;
+
+alter command?
+alter command is used to modify the structure of an existing database object
+alter used to alter the structure of table like adding new columns, dropping existing 
+column,changing the length or datatype of a column and to rename the table?
+
+syntax :
+alter TABLE TAB_NAME
+{
+    ADD column_name datatype,
+    DROP COLUMN column_name,
+    MODIFY COLUMN column_name datatype
+};
+
+drop : used to drop database objects like tables, views ,functions ,procedures,indexes etc 
+
+syntax: 
+    drop table table_name; or drop table_name;
+    drop view view_name;
+    drop function fun_name;
+    drop index index_name;
+
+truncate : it deletes all rows from the table and we can't rollback the deleted records 
+
+syntax: 
+    truncate table table_name;
+
+
+ddl command practice 
+
+create database query?
+
+create database if not exists emp;
+
+use database ?
+use emp;
+
+create table ?
+create table employee(
+employee_id bigint,
+first_name varchar(20),
+last_name varchar(25),
+hire_date DATE,
+salary integer,
+manager_id bigint ,
+department_id int
+
+);
+# table ddl employee ddl  above query 
+# create database 
+
+create database if not exists emp;
+# select database 
+use emp;
+# create table 
+create table public.employee
+(
+employee_id bigint,
+first_name varchar(20),
+last_name varchar(20),
+hire_date date,
+salary integer,
+manager_id bigint,
+department_id int 
+);
+
+desc table employee;
+--renaming table using alter--
+
+
+alter table public.employee rename to public.employees;
+
+--add a new column 'location'--
+alter table public.employee add column location varchar(30);
+
+desc table employee;
+-- increase the length of first_name from 20 to 25 -- 
+alter table public.employee modify FIRST_NAME varchar(25);
+
+DESC TABLE EMPLOYEE;
+
+--DROP EXISTING COLUMN MANAGER_ID -- 
+alter table public.employee drop column MANAGER_ID;
+
+--DESCRIBE TABLE --
+DESC TABLE EMPLOYEE;
+
+--DROP THE TABLE COMPLETELY--
+DROP TABLE PUBLIC.EMPLOYEES;
+
+SHOW TABLES;
+
+dml commands?
+dml :dml statements are used to add the data,modify data and to delete the data from tables.
+
+below are the dml commands :
+--insert 
+--update 
+--delete 
+
+
+insert: to insert data into table,by using insert we can 
+
+insert single record manually 
+insert multiple records manually 
+insert bulk data from other processes 
+insert data from one table to another data 
+
+syntax: 
+insert into table_name(columns)
+values(....);
+insert into table_a(columns) select from table_b;
+--insert single record manually--
+
+Update:
+ Update: to modify data from the table. we use set keyword for updating data 
+ by using update we can 
+ 1. update one or more columns data 
+ 2. update one or more records based on condition 
+ 3. update entire table 
+
+syntax: update table table_name set column1=,column2=..,
+
+update table table_name set column1=...
+where condition;
+--update single record--
+update employee set salary=50000 where employee_id=1;
+--update multiple records--
+update employee set salary=50000 where department_id=1;
+--update entire table--
+update employee set salary=50000;
+
+delete :
+
+delete: to remove records from table, by using delete we can 
+1. delete one or more record based on condition 
+2.delete all records 
+
+syntax: delete from table_name;
+    delete from table_name where condition;
+
+what is difference between truncate and delete?
+we can delete one or more or all records from a table by using delete statement based on conditions and we can rollback the deleted data if we need .
+delete is a dml statement.
+truncate will delete all the records and the delete data can't be rolled back.
+it is a ddl statement.
+it will reset the identity column to its seed value.
+it is faster than delete statement.
+
+TCL(transaction control language)
+tcl: a transaction is a set if sql statements executed on the data stored in database/
+tcl commands are used to manage those transaction in the database and mainly to control the transaction made by dml commands like insert,update and delete .
+
+commit 
+rollback
+savepoint
+commit: to save the changes made by dml commands in the database.
+it is used to permanently save any transaction into the database 
+syntax: commit;
+
+rollback: to undo the changes made by dml commands in the database.
+it is used to rollback the transaction made after last commit 
+syntax: rollback;
+
+savepoint: it is used to save transaction up to a point and we can rollback the transaction made after that point 
+save transaction sp1;
+transactions..
+rollback transaction sp2;
+
+
+dcl (data control language)
+dcl : dcl commands are used to handle access provileage for users and roles on database objects to.
+only database administrator's & owner's of the database objects to users and roles 
+grant: it is used to provide permissions on database objects to users and roles 
+syntax: GRANT  prviliage_name on db_object TO user |role 
+revoke: it is used to remove permissions on database objects to users and roles 
+syntax: revoke prviliage_name on db_object from user|role 
+
+
+previlege : privilege let the user know what are all operations that users can perform on that object 
+table/view privileges: select,insert,update,delete and all 
+schema/database level previlege create,alter and drop 
+
+--renaming table using alter--
+
+
+alter table public.employee rename to public.employees;
+
+--add a new column 'location'--
+alter table public.employee add column location varchar(30);
+
+desc table employee;
+-- increase the length of first_name from 20 to 25 -- 
+alter table public.employee modify FIRST_NAME varchar(25);
+
+DESC TABLE EMPLOYEE;
+
+--DROP EXISTING COLUMN MANAGER_ID -- 
+alter table public.employee drop column MANAGER_ID;
+
+--DESCRIBE TABLE --
+DESC TABLE EMPLOYEE;
+
+--DROP THE TABLE COMPLETELY--
+DROP TABLE PUBLIC.EMPLOYEES;
+
+SHOW TABLES;
+
+desc table employee;
+-- insert command--
+insert into public.employee values (1,'stolen','king','1987-01-01',50000,90,'hyderabad');
+
+--insert into based on columnns -- 
+insert into public.employee (employee_id,first_name,last_name,hire_date,salary,department_id,location)
+values(3,'neena','naina','1999-01-03',60000,92,'chennai');
+insert into public.employee values(2,'rani','queen','1999-01-02',45000,91,'kerala');
+insert into public.employee values
+(4,'dhoni','queen','1999-01-03',46000,92,'bangolore'),
+(5,'kiran','computer','2000-02-03',45000,91,'karimnagar');
+
+--have a look at the data 
+select * from employee;
+
+-- create anoterh table with few columns 
+create table public.emp2(
+emp_id number(2),
+first_name varchar(20),
+last_name varchar(20),
+sal number(8,2)
+);
+--insert data from one table to another table --
+insert into public.emp2(emp_id,first_name,last_name,sal)
+select employee_id,first_name,last_name,salary from public.employee;
+
+--have a look at emp2 table--
+select * from public.emp2;
+
+
+--update command--
+--update the dept_id from 92 to 82 -- 
+
+update public.employee SET DEPARTMENT_ID=89 where DEPARTMENT_ID=92;
+
+--increase salary to every one by 500-- 
+update public.employee set salary=salary+500;
+select * from employee;
+
+--update the phone number and salary of emp 105 --
+update public.employee 
+set location='pune',salary=45500 where department_id=91;
+----------------------
+--delete commnad-- 
+select * from emp2;
+-- remove all emp2 from emp_5--
+ delete from public.emp2 where emp_id=5;
+
+ --have a look at the data --
+ select * from public.emp2; 
+ --delete all records from emp table --
+ delete from public.emp2;
+ --have a look at emp2 table--
+ select * from emp2; 
+
+ --truncate emp table--
+ truncate table public.emp2;
+
+ --have a look at emp2 table--
+  select * from emp2;
+
+
+--set autocommit to false disable autocommit
+alter session set autocommit=false ;
+
+insert into public.employee values 
+(102,'lex','de hean','5225,')
+
+
+
+  --set autocommit to false (disable commit)--
+ALTER SESSION SET AUTOCOMMIT=FALSE;
+
+SELECT * FROM EMPLOYEE;
+
+insert into public.emp2(emp_id,first_name,last_name,sal)
+select employee_id,first_name,last_name,salary from public.employee;
+
+COMMIT;
+
+--have a look at the table --
+SELECT * FROM EMP2;
+
+--DELETE all records from the table--
+delete from public.emp2;
+--have a look at the table--
+select * from public.emp2;
+
+--commit the transcation--
+commit;
+
+--rollback the transcation---
+rollback; --after commit rollback not working --
+
+--have a look at the table--
+select * from public.emp2;
+--desc --
+desc table emp2;
+
+------------------
+insert into public.emp2 values
+(1,'lex','king',45600),
+(2,'queen','large',78000);
+
+commit;
+--have a look at the table -- 
+select * from public.emp2;
+
+--truncate the table--
+truncate table public.emp2;
+
+--have a look at the table--
+select * from public.emp2;
+
+--rollback the transcations--
+rollback;
+
+--have a look at the table--
+select * from public.emp2;
+
+-- in mysql other databases not working -- 
+-- snokflow it is working -- 
+
+
+DQL (data query language) 
+dql: 
+select is the only dql commadn we use to retrieve data from database 
+select is the very impt command that we use to fetch data from tables and views 
+select command plays key role in data analysis
+syntax: select * /column_list from table/view_name;
+
+select * from public.employee;
+select * from public.employee where department_id=91;
+
+
+select statement:
+ select : select command is used to retreive data from tables and views in database 
+ syntax: select * /column_list from table/view_name;
+
+ with select statements we can 
+
+ -- fetch all columns(*) or only required columns from a table 
+ ---- fetch all records or subset of records using where filter condition 
+ --evaluate expression
+ --call pre-defined functions and user defined functions 
+ --calculate aggregation and summers 
+ --order data in ascending or descending order 
+
